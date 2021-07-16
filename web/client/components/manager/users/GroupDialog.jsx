@@ -73,7 +73,7 @@ class GroupDialog extends React.Component {
             marginTop: "3px",
             marginBottom: "20px",
             padding: "5px",
-            border: "1px solid #078AA3"
+            border: "1px solid #006b8f"
         }
     };
 

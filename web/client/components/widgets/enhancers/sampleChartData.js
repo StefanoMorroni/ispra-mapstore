@@ -11,7 +11,7 @@ const data = [
     {name: 'C', variable: 3, pv: 3, amt: 3},
     {name: 'D', variable: 1, pv: 1, amt: 2}
 ];
-const series = [{dataKey: "variable", color: `#078aa3`}];
+const series = [{dataKey: "variable", color: `#006b8f`}];
 const xAxis = {dataKey: "name", show: false};
 
 import { defaultProps } from 'recompose';
