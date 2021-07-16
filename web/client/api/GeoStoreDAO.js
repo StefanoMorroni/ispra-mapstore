@@ -13,8 +13,11 @@ import xml2js from 'xml2js';
 const xmlBuilder = new xml2js.Builder();
 
 import axios from '../libs/ajax';
+import axiosRetry from 'axios-retry';
 import ConfigUtils from '../utils/ConfigUtils';
 import { registerErrorParser } from '../utils/LocaleUtils';
+
+axiosRetry(axios, { retries: 3, retryDelay: axiosRetry.exponentialDelay });
 
 const generateMetadata = (name = "", description = "") =>
     "<description><![CDATA[" + description + "]]></description>"
