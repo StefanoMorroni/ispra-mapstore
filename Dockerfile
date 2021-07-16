@@ -13,7 +13,7 @@ COPY ./release/bin-war/target/mapstore.war "${CATALINA_BASE}/webapps/"
 
 # Geostore externalization template. Disabled by default
 COPY docker/geostore-datasource-ovr.properties "${CATALINA_BASE}/conf/"
-ARG GEOSTORE_OVR_OPT=""
+ARG GEOSTORE_OVR_OPT="-Dgeostore-ovr=file:///usr/local/tomcat/conf/geostore-datasource-ovr.properties"
 ENV JAVA_OPTS="${JAVA_OPTS} ${GEOSTORE_OVR_OPT}"
 
 # Set variable to better handle terminal commands
