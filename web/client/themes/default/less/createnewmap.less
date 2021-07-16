@@ -24,14 +24,31 @@
 // **************
 // Layout
 // **************
-.create-new-map-container {
-    .dropdown-toggle {
-        height: 52px;
-    }
+@media screen and (max-width: 600px) {
+    .create-new-map-container {
+        padding-top: 80px;
 
-    .modal-body {
-        padding: 8px !important;
+        .dropdown-toggle {
+            height: 52px;
+        }
+
+        .modal-body {
+            padding: 8px !important;
+        }
     }
+}
+@media screen and (min-width: 600px) {
+    .create-new-map-container {
+        padding-top: 100px;
+
+        .dropdown-toggle {
+            height: 52px;
+        }
+
+        .modal-body {
+            padding: 8px !important;
+        }
+    }    
 }
 
 .new-map-dialog {
