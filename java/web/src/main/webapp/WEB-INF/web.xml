@@ -22,8 +22,10 @@
       <param-value>${datadir.location}/proxy.properties</param-value>
     </context-param>
 
-	<!-- <context-param> <param-name>log4jConfigLocation</param-name> <param-value>file:${config.dir}/log4j.xml</param-value>
-		</context-param> -->
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>file:${datadir.location}/log4j.properties</param-value>
+	</context-param>
 
 	<!-- spring context loader -->
 	<listener>
