@@ -9,7 +9,7 @@ ENV JAVA_OPTS="${JAVA_OPTS}  -Xms512m -Xmx512m -XX:MaxPermSize=128m"
 RUN find "${CATALINA_BASE}/webapps/" -delete;
 
 # Add war files to be deployed
-COPY ./release/bin-war/target/mapstore.war "${CATALINA_BASE}/webapps/"
+COPY ./product/target/mapstore.war "${CATALINA_BASE}/webapps/"
 
 # Geostore externalization template. Disabled by default
 COPY docker/geostore-datasource-ovr.properties "${CATALINA_BASE}/conf/"
