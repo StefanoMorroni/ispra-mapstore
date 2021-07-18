@@ -114,6 +114,7 @@ class StandardApp extends React.Component {
             }
         };
 
+        ConfigUtils.setLocalConfigurationFile("rest/config/load/localConfig.json");
         if (urlQuery.localConfig) {
             ConfigUtils.setLocalConfigurationFile(urlQuery.localConfig + '.json');
         }
