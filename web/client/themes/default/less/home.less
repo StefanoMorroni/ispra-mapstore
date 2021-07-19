@@ -169,3 +169,64 @@
         }
     }
 }
+
+.page-manager {
+    @media screen and (max-width: 1000px) {
+        .navbar-home {
+            position: fixed;
+            top: 93px;
+            width: 100%;
+            margin-bottom: 0;
+            z-index: 1000;
+            background-color: @ms2-color-background;
+        }
+        .Manager-Container {
+            position: fixed;
+            top: 250px;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+            background-color: @ms2-color-background;            
+        }
+        .MapSearchBar.user-search {
+            top: -60px;
+            height: 0;
+            overflow: visible;
+        }
+        .MapSearchBar.user-search .input-group {
+            box-shadow: -1px 1px 5px 1px rgba(94,94,94,1);
+        }
+        #home-button {
+            float: right;
+        }
+    }    
+    @media screen and (min-width: 1000px) {
+        .navbar-home {
+            position: fixed;
+            top: 138px;
+            width: 100%;
+            margin-bottom: 0;
+            z-index: 1000;
+            background-color: @ms2-color-background;
+        }
+        .Manager-Container {
+            position: fixed;
+            top: 300px;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+            background-color: @ms2-color-background;            
+        }
+        .MapSearchBar.user-search {
+            top: -100px;
+            height: 0;
+            overflow: visible;
+        }
+        .MapSearchBar.user-search .input-group {
+            box-shadow: -1px 1px 5px 1px rgba(94,94,94,1);
+        }
+        #home-button {
+            float: right;
+        }
+    }
+}
